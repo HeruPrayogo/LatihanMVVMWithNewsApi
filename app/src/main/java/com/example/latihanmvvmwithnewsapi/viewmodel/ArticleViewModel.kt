@@ -5,11 +5,12 @@ import androidx.lifecycle.ViewModel
 import com.example.latihanmvvmwithnewsapi.model.article.Article
 import com.example.latihanmvvmwithnewsapi.model.article.ArticleX
 import com.example.latihanmvvmwithnewsapi.network.ApiService
+import dagger.hilt.android.lifecycle.HiltViewModel
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import javax.inject.Inject
-
+@HiltViewModel
 class ArticleViewModel @Inject constructor(var api : ApiService): ViewModel() {
     lateinit var liveDataArticle : MutableLiveData<List<ArticleX>?>
 

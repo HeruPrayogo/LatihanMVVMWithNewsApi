@@ -10,7 +10,9 @@ import com.example.latihanmvvmwithnewsapi.R
 import com.example.latihanmvvmwithnewsapi.adapter.ArticleAdapter
 import com.example.latihanmvvmwithnewsapi.databinding.ActivityArticleBinding
 import com.example.latihanmvvmwithnewsapi.viewmodel.ArticleViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class ArticleActivity : AppCompatActivity() {
     lateinit var binding: ActivityArticleBinding
     lateinit var artadapter: ArticleAdapter

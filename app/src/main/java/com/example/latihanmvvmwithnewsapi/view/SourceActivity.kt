@@ -9,7 +9,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.latihanmvvmwithnewsapi.adapter.SourceAdapter
 import com.example.latihanmvvmwithnewsapi.databinding.ActivitySourceBinding
 import com.example.latihanmvvmwithnewsapi.viewmodel.SourceViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class SourceActivity : AppCompatActivity() {
     lateinit var binding : ActivitySourceBinding
     lateinit var sourceAdapter: SourceAdapter
